@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-429 vendors, 3174 endpoints.
+433 vendors, 3214 endpoints.
 
 ### advertising
 
@@ -413,10 +413,14 @@ Products, prices, travel, tickets, property and shipping.
 
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
+| [ATTOM Property API](https://api.developer.attomdata.com/docs) `attom` | US property data from public records for over 160 million properties: characteristics, owners, assessments and taxes, sales history, building permits, automated valuations, rent and equity estimates. | 12 read | key in header | `ATTOM_API_KEY` | docs 2026-11-16 |
 | [Best Buy](https://bestbuyapis.github.io/api-documentation/) `bestbuy` | Best Buy US products: search and details with prices, stores and in-store availability, categories, trending and most-viewed products, and open-box offers. | 9 read | key in query | `BESTBUY_API_KEY` | docs 2026-11-09 |
 | [CarsXE](https://docs.carsxe.com/docs) `carsxe` | Vehicle data: VIN decoding, license plate lookup in 50+ countries, market value, history, recalls, lien and theft checks, and year/make/model search. | 9 read | key in query | `CARSXE_API_KEY` | docs 2026-11-09 |
 | [Duffel](https://duffel.com/docs/api/overview/welcome) `duffel` | Flight search across airlines: offer requests return priced offers for a journey, plus offer details and airport and place lookup. | 6 read | key in header | `DUFFEL_API_KEY` | docs 2026-11-09 |
+| [Etsy Open API v3](https://developer.etsy.com/documentation/) `etsy` | Public reads of Etsy's marketplace: search active listings, read a listing with its images and reviews, and look up shops and their listings and reviews. | 10 read | key in header | `ETSY_API_KEY`, `ETSY_SHARED_SECRET` | docs 2026-11-16 |
+| [FlightAware AeroAPI](https://www.flightaware.com/aeroapi/portal/documentation) `flightaware` | FlightAware's flight-tracking API: live and recent flight status, tracks and positions, airport arrivals, departures, delays and weather, airline schedules and operator details. | 13 read | key in header | `FLIGHTAWARE_API_KEY` | docs 2026-11-16 |
 | [Keepa](https://github.com/keepacom/api_backend) `keepa` | Amazon product price and sales-rank history, product search, best-seller lists, categories and seller data across 11 Amazon marketplaces. | 8 read | key in query | `KEEPA_API_KEY` | docs 2026-11-09 |
+| [Rainforest API](https://docs.trajectdata.com/rainforestapi/product-data-api/overview) `rainforest` | Real-time Amazon product data from Traject Data's Rainforest API: product pages, search results, seller offers, bestseller lists and search suggestions on every Amazon domain, as structured JSON. | 5 read | key in query | `RAINFOREST_API_KEY` | docs 2026-11-16 |
 | [RentCast](https://developers.rentcast.io/reference/introduction) `rentcast` | US property records, automated value and rent estimates with comparables, active sale and rental listings, and ZIP-level market statistics. | 7 read | key in header | `RENTCAST_API_KEY` | docs 2026-11-09 |
 | [Recreation.gov RIDB](https://ridb.recreation.gov/docs) `ridb` | The Recreation Information Database behind Recreation.gov: US federal recreation areas, facilities (campgrounds, trails, ranger stations), campsites, permits, tours, activities and events. | 9 read | key in header | `RIDB_API_KEY` | docs 2026-11-09 |
 | [Service Victoria Servo Saver](https://service.vic.gov.au/find-services/transport-and-driving/servo-saver/help-centre/servo-saver-public-api) `servosaver` | Victoria (Australia) government Fair Fuel open data: every registered service station's fuel prices in cents per litre, plus station, brand and fuel-type reference lists. | 4 read | key in header | `SERVOSAVER_API_KEY` | docs 2026-11-09 |
