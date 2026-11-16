@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-433 vendors, 3214 endpoints.
+436 vendors, 3254 endpoints.
 
 ### advertising
 
@@ -125,8 +125,10 @@ People and contact data: emails, phones, profiles.
 | [Enrich Layer](https://enrichlayer.com/docs) `enrichlayer` | People, company, contact, job and school data: profile enrichment, lookups, search, emails and phone numbers from Enrich Layer. | 24 read | key in header | `ENRICHLAYER_API_KEY` | docs 2026-11-08 |
 | [Enrow](https://docs.enrow.io/api-overview) `enrow` | Find and verify professional emails and find phone numbers, asynchronously, by name, company or LinkedIn URL. | 7 read | key in header | `ENROW_API_KEY` | docs 2026-11-08 |
 | [Findymail](https://app.findymail.com/docs/) `findymail` | Find and verify emails and phones from names, domains or LinkedIn profiles, and look up companies and employees. | 11 read | key in header | `FINDYMAIL_API_KEY` | docs 2026-11-08 |
+| [Forager](https://docs.forager.ai/) `forager` | People and organization data: role and company search, person lookup by LinkedIn slug, reverse email and phone lookup, work and personal emails and phone numbers. | 17 read | key in header | `FORAGER_API_KEY` | docs 2026-11-16 |
 | [FullEnrich](https://docs.fullenrich.com/api/v2/general/introduction) `fullenrich` | Waterfall enrichment of work emails, personal emails and mobile phones across 20+ providers, plus people and company search and reverse email lookup. | 10 read | key in header | `FULLENRICH_API_KEY` | docs 2026-11-09 |
 | [GetLeads](https://www.getleads.io/docs/) `getleadsio` | B2B contact and company database with structured search, counts, async CSV exports, and person and company enrichment. | 18 read | key in header | `GETLEADS_API_KEY` | docs 2026-11-08 |
+| [GetProspect](https://getprospect.com/api-docs) `getprospect` | B2B people and company search and enrichment, work email finding and email verification. | 10 read | key in header | `GETPROSPECT_API_KEY` | docs 2026-11-16 |
 | [Happenstance](https://developer.happenstance.ai/api-reference/introduction) `happenstance` | Research a person from a description, and search for people across your network, groups and friends' connections. | 9 read | key in header | `HAPPENSTANCE_API_KEY` | docs 2026-11-09 |
 | [Hunter](https://hunter.io/api-documentation/v2) `hunter` | Find and verify professional email addresses by domain or person, and enrich people and companies. | 10 read | key in header | `HUNTER_API_KEY` | docs 2026-11-08 |
 | [Icypeas](https://api-doc.icypeas.com/) `icypeas` | Find and verify professional emails, search a people and company database, and scrape profile and company data. | 16 read | key in header | `ICYPEAS_API_KEY` | docs 2026-11-08 |
@@ -139,6 +141,7 @@ People and contact data: emails, phones, profiles.
 | [People Data Labs](https://docs.peopledatalabs.com/docs/api-overview) `pdl` | Person and company enrichment, identify and dataset search over PDL's person and company data. | 5 read | key in header | `PDL_API_KEY` | docs 2026-11-08 |
 | [Prospeo](https://prospeo.io/api-docs) `prospeo` | Find and verify emails and mobiles, enrich people and companies, and search a B2B people and company database. | 7 read | key in header | `PROSPEO_API_KEY` | docs 2026-11-08 |
 | [Quick Enrich](https://app.quickenrich.io/docs) `quickenrich` | Work email and phone lookup by LinkedIn URL or name and company, reverse email lookup, domain and contact discovery, and company search. | 8 read | key in header | `QUICKENRICH_API_KEY` | docs 2026-11-08 |
+| [Reverse Contact](https://docs.reversecontact.com/) `reverse-contact` | Reverse email lookup to a full professional profile, person and company profiles, people and company search, and email and phone finding. | 13 read | key in header | `REVERSECONTACT_API_KEY` | docs 2026-11-16 |
 | [RocketReach](https://docs.rocketreach.co/reference/rocketreach-api) `rocketreach` | Search and look up professionals and companies: work and personal emails, phones, job history and firmographics. | 8 read | key in header | `ROCKETREACH_API_KEY` | docs 2026-11-09 |
 | [SalesQL](https://salesql.com/docs/api) `salesql` | Verified work and direct emails and phone numbers for a person by LinkedIn URL, email or name, organization profiles, and email verification. | 4 read | key in header | `SALESQL_API_KEY` | docs 2026-11-16 |
 | [SignalHire](https://docs.signalhire.com/overview) `signalhire` | Professional profiles with emails and phones by LinkedIn URL, email or phone, people search by title, company and location, and company profiles. | 7 read | key in header | `SIGNALHIRE_API_KEY` | docs 2026-11-16 |

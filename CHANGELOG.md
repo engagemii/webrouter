@@ -8,6 +8,7 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); while on
 
 ### Added
 
+- Vendor catalog: Forager, Reverse Contact and GetProspect, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 436 vendors and 3,254 endpoints.
 - Vendor catalog: FlightAware AeroAPI, Etsy Open API v3, Rainforest API and ATTOM Property API, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 433 vendors and 3,214 endpoints.
 - Vendor catalog: Shodan, NIST National Vulnerability Database (NVD), Have I Been Pwned, CIRCL hashlookup, ENISA EU Vulnerability Database (EUVD), Verisign RDAP (.com, .net), Public Interest Registry RDAP (.org) and FIRST EPSS, with 50 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 429 vendors and 3,174 endpoints.
 - Vendor catalog: AlienVault OTX (LevelBlue Open Threat Exchange), WhoisXML API, SecurityTrails, Hybrid Analysis and urlscan.io, with 48 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 421 vendors and 3,124 endpoints.
