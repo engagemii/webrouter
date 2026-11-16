@@ -8,6 +8,7 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); while on
 
 ### Added
 
+- Vendor catalog: Shodan, NIST National Vulnerability Database (NVD), Have I Been Pwned, CIRCL hashlookup, ENISA EU Vulnerability Database (EUVD), Verisign RDAP (.com, .net), Public Interest Registry RDAP (.org) and FIRST EPSS, with 50 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 429 vendors and 3,174 endpoints.
 - Vendor catalog: AlienVault OTX (LevelBlue Open Threat Exchange), WhoisXML API, SecurityTrails, Hybrid Analysis and urlscan.io, with 48 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 421 vendors and 3,124 endpoints.
 - Vendor catalog: Wise, Fixer, currencylayer, Dune, exchangerate.host, Open Exchange Rates and IBGE, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 416 vendors and 3,076 endpoints.
 - Vendor catalog: Alchemy, Intrinio and CryptoCompare, with 31 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 409 vendors and 3,036 endpoints.
