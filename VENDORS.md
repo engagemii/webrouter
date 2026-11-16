@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-436 vendors, 3254 endpoints.
+440 vendors, 3282 endpoints.
 
 ### advertising
 
@@ -143,10 +143,14 @@ People and contact data: emails, phones, profiles.
 | [Quick Enrich](https://app.quickenrich.io/docs) `quickenrich` | Work email and phone lookup by LinkedIn URL or name and company, reverse email lookup, domain and contact discovery, and company search. | 8 read | key in header | `QUICKENRICH_API_KEY` | docs 2026-11-08 |
 | [Reverse Contact](https://docs.reversecontact.com/) `reverse-contact` | Reverse email lookup to a full professional profile, person and company profiles, people and company search, and email and phone finding. | 13 read | key in header | `REVERSECONTACT_API_KEY` | docs 2026-11-16 |
 | [RocketReach](https://docs.rocketreach.co/reference/rocketreach-api) `rocketreach` | Search and look up professionals and companies: work and personal emails, phones, job history and firmographics. | 8 read | key in header | `ROCKETREACH_API_KEY` | docs 2026-11-09 |
+| [SalesIntel](https://developer.salesintel.io/salesintel-api-documentation/getting-started-with-salesintel-apis) `salesintel` | Human-verified B2B contacts and companies: contact and company search and append, technographics and company news. | 7 read | key in header | `SALESINTEL_API_KEY` | docs 2026-11-16 |
 | [SalesQL](https://salesql.com/docs/api) `salesql` | Verified work and direct emails and phone numbers for a person by LinkedIn URL, email or name, organization profiles, and email verification. | 4 read | key in header | `SALESQL_API_KEY` | docs 2026-11-16 |
+| [Seamless.AI](https://docs.seamless.ai/introduction) `seamless-ai` | B2B contact and company search, and the contacts and companies your organization has already researched. | 5 read | key in header | `SEAMLESS_API_KEY` | docs 2026-11-16 |
 | [SignalHire](https://docs.signalhire.com/overview) `signalhire` | Professional profiles with emails and phones by LinkedIn URL, email or phone, people search by title, company and location, and company profiles. | 7 read | key in header | `SIGNALHIRE_API_KEY` | docs 2026-11-16 |
 | [Sixtyfour](https://docs.sixtyfour.ai/introduction) `sixtyfour` | Research agents and data for people and companies: enrichment, email and phone finding, reverse lookups and filter search. | 15 read | key in header | `SIXTYFOUR_API_KEY` | docs 2026-11-08 |
+| [Skrapp](https://skrapp.io/api) `skrapp` | Work email finding and verification, phone lookup, and company search, snapshots and enrichment. | 8 read | key in header | `SKRAPP_API_KEY` | docs 2026-11-16 |
 | [Tomba](https://docs.tomba.io/api) `tomba` | Find, verify and enrich professional emails, phone numbers and company data by domain, name, LinkedIn URL or article. | 17 read | key in header | `TOMBA_API_KEY`, `TOMBA_SECRET_KEY` | docs 2026-11-08 |
+| [UpLead](https://docs.uplead.com/) `uplead` | B2B contact and company data: person lookup by email or name, company lookup, contacts at a company, and contact search with verified emails. | 8 read | key in header | `UPLEAD_API_KEY` | docs 2026-11-16 |
 | [Village](https://docs.village.ai/api-reference/introduction) `village` | Relationship intelligence: warm-introduction paths to people and companies through your network, with people and company enrichment. | 13 read | key in header | `VILLAGE_API_TOKEN` | docs 2026-11-08 |
 | [Whitepages Pro](https://api.whitepages.com/docs) `whitepages` | US people search, reverse phone lookup and property records (owners, residents, tax and mortgage history). | 7 read | key in header | `WHITEPAGES_API_KEY` | docs 2026-11-09 |
 | [Wiza](https://docs.wiza.co/) `wiza` | Reveal emails and phones from profile URLs or names, enrich companies, and search prospects. | 5 read | key in header | `WIZA_API_KEY` | docs 2026-11-08 |
