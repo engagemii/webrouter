@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-455 vendors, 3367 endpoints.
+460 vendors, 3421 endpoints.
 
 ### advertising
 
@@ -43,6 +43,7 @@ Web and product analytics, tag management, CRM and marketing data.
 
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
+| [Affinity](https://developer.affinity.co/pages/external-api-v2/introduction) `affinity` | An Affinity relationship CRM: companies, people and opportunities with their field data, lists and saved views, relationship strength, and notes. | 14 read | key in header | `AFFINITY_API_KEY` | docs 2026-11-16 |
 | [Amplitude](https://amplitude.com/docs/apis/analytics/dashboard-rest) `amplitude` | Product analytics from an Amplitude project: saved chart results, event segmentation, funnels, retention, active users, revenue LTV and a user's event stream. | 11 read | HTTP Basic | `AMPLITUDE_API_KEY`, `AMPLITUDE_SECRET_KEY` | docs 2026-11-16 |
 | [Attio](https://docs.attio.com/rest-api/overview) `attio` | An Attio CRM workspace: people, companies, deals and custom objects, list entries (pipelines), notes, tasks and the workspace's schema. | 11 read | key in header | `ATTIO_API_KEY` | docs 2026-11-16 |
 | [Close](https://developer.close.com/api/overview) `close-crm` | A Close CRM organization: leads, contacts, opportunities, activities and tasks, advanced-filter search, and activity and pipeline reports. | 12 read | HTTP Basic | `CLOSE_API_KEY` | docs 2026-11-16 |
@@ -621,16 +622,20 @@ Package registries, code hosting, cloud platforms and their prices.
 
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
+| [APIs.guru](https://apis.guru/api-doc/) `apis-guru` | An open directory of public web API definitions in OpenAPI format: providers, APIs, versions and links to each machine-readable definition. | 7 read | none | none | docs 2026-11-16 |
 | [Azure Retail Prices](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices) `azure-retail-prices` | Keyless Microsoft retail (pay-as-you-go, reservation, savings plan) prices for every Azure service, SKU and region. | 1 read | none | none | docs 2026-11-09 |
 | [Context7](https://context7.com/docs/api-guide) `context7` | Up-to-date, version-specific documentation and code snippets for software libraries, ranked for a question; plus reading one web page narrowed to a question. | 5 read | key in header | `CONTEXT7_API_KEY` | docs 2026-11-09 |
+| [crates.io](https://crates.io/data-access) `crates-io` | The Rust package registry: crate search, metadata, versions, dependencies, reverse dependencies, owners and download counts. | 10 read | none | none | docs 2026-11-16 |
 | [Docker Hub](https://docs.docker.com/reference/api/hub/latest/) `docker-hub` | Docker Hub repositories and image tags: descriptions, pull and star counts, last update, tag digests, sizes and platforms. | 4 read | key in header | `DOCKER_HUB_TOKEN` | docs 2026-11-09 |
 | [GitHub](https://docs.github.com/en/rest) `github` | Repositories, issues, pull requests, commits and code search on GitHub through its REST API. | 9 read | key in header | `GITHUB_TOKEN` | docs 2026-11-09 |
 | [Google Cloud Billing Catalog](https://docs.cloud.google.com/billing/v1/how-tos/catalog-api) `google-cloud-billing` | Public list prices of Google Cloud: every service and each service's SKUs with description, regions and pricing tiers, from the Cloud Billing Catalog API. | 2 read | key in query | `GOOGLE_CLOUD_BILLING_API_KEY` | docs 2026-11-09 |
 | [IBM Cloud Global Catalog](https://cloud.ibm.com/apidocs/resource-catalog/global-catalog) `ibm-global-catalog` | IBM Cloud's catalog of services, plans and deployments with their public pricing, from the Global Catalog API. | 5 read | none | none | docs 2026-11-09 |
+| [Libraries.io](https://libraries.io/api) `libraries-io` | Open source package metadata across 30+ package managers: cross-registry search, versions, dependencies, dependents, dependent repositories and SourceRank scores. | 11 read | key in query | `LIBRARIES_IO_API_KEY` | docs 2026-11-16 |
 | [npm registry](https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md) `npm` | Public npm registry: package metadata, single versions, full-text package search, and daily download counts. | 5 read | none | none | docs 2026-11-09 |
 | [Oracle Cloud Infrastructure price list](https://docs.oracle.com/en-us/iaas/Content/Billing/Tasks/signingup_topic-Estimating_Costs.htm) `oci-price-list` | Public list prices of Oracle Cloud Infrastructure products by part number: display name, billing metric, service category and pay-as-you-go price, with tiers where they apply. | 1 read | none | none | docs 2026-11-09 |
 | [PyPI](https://docs.pypi.org/api/) `pypi` | Python Package Index metadata: a project's latest info, every release and file with hashes, known vulnerabilities, the simple index, and PyPI-wide size stats. | 5 read | none | none | docs 2026-11-09 |
 | [Read the Docs](https://docs.readthedocs.com/platform/stable/api/v3.html) `readthedocs` | Documentation projects hosted on Read the Docs: project details, versions, builds, full-text search across docs, and embeddable page sections. | 8 read | key in header | `READTHEDOCS_TOKEN` | docs 2026-11-09 |
+| [RubyGems.org](https://guides.rubygems.org/rubygems-org-api/) `rubygems` | The Ruby gem registry: gem search, metadata, versions, reverse dependencies, owners and download counts, plus recent releases. | 12 read | none | none | docs 2026-11-16 |
 | [Supabase](https://supabase.com/docs/reference/api/introduction) `supabase` | Supabase Management API: the user's projects and organisations, read-only SQL against a project's Postgres, logs, health, advisors and edge functions. | 9 read | key in header | `SUPABASE_ACCESS_TOKEN` | docs 2026-11-09 |
 | [Vercel](https://vercel.com/docs/rest-api) `vercel` | Read a Vercel account: deployments and their build events and runtime logs, projects, domains, teams and the current user. | 9 read | key in header | `VERCEL_ACCESS_TOKEN` | docs 2026-11-09 |
 
