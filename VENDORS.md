@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-448 vendors, 3321 endpoints.
+455 vendors, 3367 endpoints.
 
 ### advertising
 
@@ -63,12 +63,17 @@ Keywords, rankings, backlinks and search-console data.
 
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
+| [Advanced Web Ranking](https://app.advancedwebranking.com/docs/developer-api-v2.html) `advanced-web-ranking` | Your Advanced Web Ranking rank-tracking account: projects, tracked keywords and ranking dates, ranking exports, and market share of the domains in your tracked results. | 7 read | key in query | `AWR_API_TOKEN` | docs 2026-11-16 |
 | [Ahrefs](https://docs.ahrefs.com/api/docs/introduction.md) `ahrefs` | Ahrefs API v3: Domain Rating, backlinks, referring domains, organic keywords, top pages and keyword metrics. | 10 read | key in header | `AHREFS_API_KEY` | docs 2026-11-09 |
+| [Bing Webmaster Tools](https://learn.microsoft.com/en-us/bingwebmaster/getting-started) `bing-webmaster` | Your sites in Bing Webmaster Tools: search clicks, impressions and positions by query and page, crawl stats and issues, inbound links, URL index info and Bing keyword volume. | 12 read | key in query | `BING_WEBMASTER_API_KEY` | docs 2026-11-16 |
+| [Chrome UX Report (CrUX)](https://developer.chrome.com/docs/crux/api) `chrome-ux-report` | Core Web Vitals from real Chrome users for any origin or popular URL: LCP, INP, CLS, FCP and TTFB distributions and 75th percentiles, as the latest 28 days or a weekly history of up to 40 periods. | 2 read | key in query | `CRUX_API_KEY` | docs 2026-11-16 |
 | [cloro](https://cloro.dev/docs/api-reference/introduction) `cloro` | Structured answers and sources from ChatGPT, Gemini, Perplexity, Google AI Mode, Bing AI Mode, Google Search and Google News, by country. | 12 read | key in header | `CLORO_API_KEY` | docs 2026-11-08 |
 | [DataForSEO](https://docs.dataforseo.com/v3/) `dataforseo` | DataForSEO APIs: live and queued Google SERPs, keyword data, DataForSEO Labs and backlinks, billed per task in USD. | 9 read | HTTP Basic | `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD` | docs 2026-11-08 |
+| [Google PageSpeed Insights](https://developers.google.com/speed/docs/insights/v5/get-started) `google-pagespeed-insights` | Lighthouse audits of any public URL (performance by default; accessibility, best-practices and SEO scores when asked for by category) plus the Chrome field data Google holds for the page and its origin. | 1 read | key in query | `PAGESPEED_API_KEY` | docs 2026-11-16 |
 | [Google Search Console](https://developers.google.com/webmaster-tools/v1/api_reference_index) `google-search-console` | Your Search Console properties: search performance (clicks, impressions, CTR, position by query, page, country, device and date) and sitemaps. | 3 read | OAuth refresh token | `GOOGLE_SEARCH_CONSOLE_CLIENT_ID`, `GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET`, `GOOGLE_SEARCH_CONSOLE_REFRESH_TOKEN` | docs 2026-11-08 |
 | [Keywords Everywhere](https://api.keywordseverywhere.com/docs/#/) `keywordseverywhere` | Keyword search volume, CPC and competition, related and People Also Search For keywords, domain and URL keywords, traffic and backlinks. | 9 read | key in header | `KEYWORDSEVERYWHERE_API_KEY` | docs 2026-11-09 |
 | [Majestic](https://developer-support.majestic.com/api/) `majestic` | Majestic link intelligence: Trust Flow, Citation Flow, backlinks, referring domains, anchors and top pages. | 6 read | key in query | `MAJESTIC_API_KEY` | docs 2026-11-08 |
+| [Mangools](https://apidocs.mangools.com/) `mangools` | Mangools SEO data: related keywords with volumes and difficulty, keyword SERPs, a domain's ranking keywords and competitors, backlinks and link metrics, and site overviews. | 11 read | key in header | `MANGOOLS_API_KEY` | docs 2026-11-16 |
 | [Moz](https://moz.com/help/links-api) `moz` | Moz Links API: Domain Authority, Page Authority, backlinks, anchor text, linking domains and top pages. | 9 read | key in header | `MOZ_API_TOKEN` | docs 2026-11-08 |
 | [Semrush](https://developer.semrush.com/api/v3/analytics/basic-docs/) `semrush` | Semrush Analytics API: domain overviews, organic and paid keywords, keyword research and backlink reports. | 14 read | key in query | `SEMRUSH_API_KEY` | docs 2026-11-08 |
 | [SE Ranking](https://seranking.com/api/data/) `seranking` | SE Ranking Data API: domain analysis, keyword research and backlink data. | 11 read | key in header | `SERANKING_API_KEY` | docs 2026-11-08 |
@@ -524,6 +529,7 @@ Drugs, clinical trials, providers, nutrition and public-health data.
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
 | [BCPM Data](https://open.bcpmdata.com/guide/1.html) `bcpmdata` | Chinese pharmaceutical data (BCPMData Open Platform): global drug R&D pipelines, China and US clinical trials, and China drug approval numbers with insurance and essential-drug status. | 10 read | key in header | `BCPMDATA_API_KEY` | docs 2026-11-09 |
+| [ClinicalTrials.gov](https://clinicaltrials.gov/data-api/api) `clinicaltrials-gov` | The US National Library of Medicine's registry of clinical studies worldwide: search studies by condition, intervention, sponsor, location or status, and fetch one study's full record. | 5 read | none | none | docs 2026-11-16 |
 | [CMS Open Payments](https://openpaymentsdata.cms.gov/about/api) `cms-open-payments` | US Open Payments data from CMS: payments and transfers of value from drug and device makers to physicians and teaching hospitals queried through the site's DKAN catalog and datastore API. | 6 read | none | none | docs 2026-11-09 |
 | [CMS Data (data.cms.gov)](https://data.cms.gov/api-docs) `data-cms` | Medicare and Medicaid datasets published by the US Centers for Medicare & Medicaid Services: the open-data catalog, and rows of any API-enabled dataset with keyword search, filters, sorting and column selection. | 3 read | none | none | docs 2026-11-09 |
 | [NIH Dietary Supplement Label Database (DSLD)](https://api.ods.od.nih.gov/dsld/docs) `dsld` | Full label contents of dietary supplements sold in the US: ingredients, amounts, claims, brands and market status, from the NIH Office of Dietary Supplements. | 5 read | none | none | docs 2026-11-09 |
@@ -570,6 +576,7 @@ Public records: law, courts, spending, procurement, sanctions, elections, open-d
 | [UNESCO Institute for Statistics Data API](https://api.uis.unesco.org/api/public/documentation) `unesco-uis` | UNESCO education, science, culture and communication indicators by country and region and year, with indicator and geo-unit definitions, from the keyless UIS Data API. | 5 read | none | none | docs 2026-11-09 |
 | [USAspending](https://api.usaspending.gov/docs/endpoints) `usaspending` | US federal spending: contracts, grants, loans and other awards, who received them, and agency budgets, from the Treasury's free USAspending.gov API. | 7 read | none | none | docs 2026-11-09 |
 | [US Census Bureau](https://www.census.gov/data/developers/guidance/api-user-guide.html) `uscensus` | US Census Bureau statistics (American Community Survey, decennial census and more) by geography, plus the Census Geocoder that turns addresses into coordinates and census geographies. | 8 read | key in query | `CENSUS_API_KEY` | docs 2026-11-09 |
+| [USPTO Open Data Portal](https://data.uspto.gov/apis/getting-started) `uspto` | The US Patent and Trademark Office's Open Data Portal: search US patent applications and grants, and read one application's bibliographic data, continuity, assignments, transactions and file-wrapper document list. | 8 read | key in header | `USPTO_API_KEY` | docs 2026-11-16 |
 | [Vaquill](https://www.vaquill.ai/docs/api-guide/overview) `vaquill` | US statutes, regulations, constitutions and court rules (federal and every state): search, citation resolution, section metadata, full text and cross-state comparison. | 6 read | key in header | `VAQUILL_API_KEY` | docs 2026-11-09 |
 | [VoteHub Polling API](https://votehub.com/polls/api/) `votehub` | US political polling data aggregated from many pollsters: approval, favorability, generic-ballot and race polls with their source links. | 5 read | none | none | docs 2026-11-09 |
 

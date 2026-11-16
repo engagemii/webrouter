@@ -8,6 +8,7 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); while on
 
 ### Added
 
+- Vendor catalog: Advanced Web Ranking, Mangools, Bing Webmaster Tools, Chrome UX Report (CrUX), Google PageSpeed Insights, ClinicalTrials.gov and USPTO Open Data Portal, with 46 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 455 vendors and 3,367 endpoints.
 - Vendor catalog: Neutrino API, EmailListVerify, IPQualityScore, Bouncer, Mailgun, DeBounce, Kickbox and Reoon Email Verifier, with 39 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 448 vendors and 3,321 endpoints.
 - Vendor catalog: SalesIntel, Skrapp, UpLead and Seamless.AI, with 28 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 440 vendors and 3,282 endpoints.
 - Vendor catalog: Forager, Reverse Contact and GetProspect, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 436 vendors and 3,254 endpoints.
