@@ -8,6 +8,7 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); while on
 
 ### Added
 
+- Vendor catalog: AlienVault OTX (LevelBlue Open Threat Exchange), WhoisXML API, SecurityTrails, Hybrid Analysis and urlscan.io, with 48 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 421 vendors and 3,124 endpoints.
 - Vendor catalog: Wise, Fixer, currencylayer, Dune, exchangerate.host, Open Exchange Rates and IBGE, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 416 vendors and 3,076 endpoints.
 - Vendor catalog: Alchemy, Intrinio and CryptoCompare, with 31 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 409 vendors and 3,036 endpoints.
 - Vendor catalog: Glassnode, GoldRush (formerly Covalent) and OANDA, with 33 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 406 vendors and 3,005 endpoints.

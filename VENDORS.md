@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-416 vendors, 3076 endpoints.
+421 vendors, 3124 endpoints.
 
 ### advertising
 
@@ -570,11 +570,16 @@ Vulnerabilities, advisories and threat intelligence.
 
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
+| [AlienVault OTX (LevelBlue Open Threat Exchange)](https://otx.alienvault.com/api) `alienvault-otx` | Community threat intelligence: pulses (threat reports with IOCs, adversaries and malware families) and indicator reputation, passive DNS, malware and analysis for IPs, domains, hostnames, file hashes and CVEs. | 14 read | key in header | `ALIENVAULT_OTX_API_KEY` | docs 2026-11-16 |
 | [CISA Known Exploited Vulnerabilities (KEV) catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) `cisa-kev` | CISA's catalog of CVEs known to be exploited in the wild, with vendor, product, date added, required action, due date and ransomware use, as free JSON and CSV feeds. | 3 read | none | none | docs 2026-11-09 |
 | [CVE Program CVE Services](https://cveawg.mitre.org/api-docs/) `cve-services` | Official CVE Records (JSON 5 format: descriptions, affected products, references, CNA and ADP containers) and CVE ID status from the CVE Program's API. | 3 read | none | none | docs 2026-11-09 |
+| [Hybrid Analysis](https://hybrid-analysis.com/docs/api/v2) `hybrid-analysis` | Malware sandbox reports from the free Falcon Sandbox service: search by hash or by file, network, family and ATT&CK terms, file overviews, report summaries and the latest detonations. | 10 read | key in header | `HYBRID_ANALYSIS_API_KEY` | docs 2026-11-16 |
 | [OSV.dev](https://google.github.io/osv.dev/api/) `osv` | Open source vulnerabilities by package and version, commit hash or ID (GHSA, PYSEC, RUSTSEC, Go, OSS-Fuzz and more) in the OSV format, from Google's free OSV.dev API. | 3 read | none | none | docs 2026-11-09 |
 | [Red Hat Security Data API](https://access.redhat.com/hydra/rest/securitydata/api-docs) `redhat-security` | Red Hat Product Security data on CVEs (severity, CWE, CVSS v3/v4 scores, advisories, affected packages and package states), CSAF advisories and OVAL streams. | 4 read | none | none | docs 2026-11-09 |
+| [SecurityTrails](https://docs.securitytrails.com/docs/overview) `securitytrails` | Current and historical DNS and WHOIS for domains, subdomains, associated domains, TLS certificates, IP WHOIS and neighbours, and domain search by record values. | 12 read | key in header | `SECURITYTRAILS_API_KEY` | docs 2026-11-16 |
+| [urlscan.io](https://docs.urlscan.io/pages/api-intro) `urlscan` | Search and read existing urlscan.io website scans (requests, IPs, domains, certificates, verdicts), hostname history, and on Pro, malicious-observable lookups and similar pages. | 6 read | key in header | `URLSCAN_API_KEY` | docs 2026-11-16 |
 | [VirusTotal](https://docs.virustotal.com/reference/overview) `virustotal` | Threat-intelligence reports on files, URLs, domains and IP addresses: multi-engine antivirus verdicts, reputation and relationships. | 5 read | key in header | `VIRUSTOTAL_API_KEY` | docs 2026-11-09 |
+| [WhoisXML API](https://whois.whoisxmlapi.com/documentation/making-requests) `whoisxml-api` | Domain and IP registration intelligence: live WHOIS and RDAP records, WHOIS history, reverse WHOIS by registrant terms, DNS lookups and subdomain discovery. | 6 read | key in header and query | `WHOISXML_API_KEY`, `WHOISXML_API_KEY`, `WHOISXML_API_KEY` | docs 2026-11-16 |
 
 ### developer
 
