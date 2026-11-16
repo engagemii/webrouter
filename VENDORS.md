@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-460 vendors, 3421 endpoints.
+465 vendors, 3463 endpoints.
 
 ### advertising
 
@@ -98,9 +98,12 @@ Social networks and communities: profiles, posts, creators.
 | [Instagram Graph API](https://developers.facebook.com/docs/instagram-platform/instagram-graph-api) `instagram` | Your Instagram professional account through Meta's Graph API: profile, media, insights, comments and other businesses' public data. | 7 read | key in query | `INSTAGRAM_ACCESS_TOKEN` | docs 2026-11-08 |
 | [Just One API](https://docs.justoneapi.com/en/usage) `justoneapi` | Social and e-commerce data from Chinese and global platforms: Xiaohongshu, Weibo, TikTok, Instagram and YouTube profiles, posts, comments and search. | 20 read | key in query | `JUSTONEAPI_TOKEN` | docs 2026-11-08 |
 | [LinkedIn](https://learn.microsoft.com/en-us/linkedin/) `linkedin` | LinkedIn's official API for the signed-in member: identity, and posts by a member or company page. | 3 read | key in header | `LINKEDIN_ACCESS_TOKEN` | docs 2026-11-08 |
+| [Mention](https://dev.mention.com/current/) `mention` | Social listening: the alerts on your Mention account, the web and social mentions each alert collected, and their statistics. | 7 read | key in header | `MENTION_API_KEY` | docs 2026-11-16 |
+| [Moltbook](https://www.moltbook.com/skill.md) `moltbook` | A social network for AI agents: posts, comments, communities (submolts), agent profiles and semantic search over them. | 10 read | key in header | `MOLTBOOK_API_KEY` | docs 2026-11-16 |
 | [Postiz](https://docs.postiz.com/public-api/introduction) `postiz` | Posts scheduled and published to connected social channels (X, LinkedIn, Instagram, TikTok, YouTube and more), and their analytics. | 6 read | key in header | `POSTIZ_API_KEY` | docs 2026-11-09 |
 | [Scrape Creators](https://docs.scrapecreators.com) `scrapecreators` | Public social media data over one API: TikTok, Instagram, YouTube, X, LinkedIn and Reddit profiles, posts, comments and search. | 26 read | key in header | `SCRAPECREATORS_API_KEY` | docs 2026-11-08 |
 | [SoundCloud](https://developers.soundcloud.com/docs/api/guide) `soundcloud` | SoundCloud's public API: search tracks, playlists and users, resolve soundcloud.com URLs, and read tracks, users, their uploads, followers and related artists. | 10 read | OAuth refresh token | `SOUNDCLOUD_CLIENT_ID`, `SOUNDCLOUD_CLIENT_SECRET` | docs 2026-11-09 |
+| [Sprout Social](https://api.sproutsocial.com/docs/) `sprout-social` | Your Sprout Social account's connected social profiles, their daily metrics, post performance, and inbox messages. | 7 read | key in header | `SPROUT_SOCIAL_API_KEY` | docs 2026-11-16 |
 | [Stack Exchange](https://api.stackexchange.com/docs) `stackexchange` | Questions, answers, users and tags across Stack Overflow and the other Stack Exchange sites, through the Stack Exchange API v2.3. | 9 read | key in header | `STACKEXCHANGE_API_KEY` | docs 2026-11-09 |
 | [TikHub](https://docs.tikhub.io/) `tikhub` | Public data from TikTok, Instagram, YouTube and X (and many other platforms) over one API: profiles, posts, comments and search. | 20 read | key in header | `TIKHUB_API_KEY` | docs 2026-11-08 |
 | [TikTok Display API](https://developers.tiktok.com/doc/display-api-overview/) `tiktok` | The TikTok Display API: profile and videos of the TikTok user who authorized your app. | 3 read | key in header | `TIKTOK_ACCESS_TOKEN` | docs 2026-11-08 |
@@ -504,6 +507,7 @@ Research literature and life-science databases: genes, proteins, compounds.
 | [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/api-docs) `alphafold` | Predicted protein structures from EMBL-EBI's AlphaFold DB: model file URLs (mmCIF, bCIF, PDB), confidence estimates and AlphaMissense annotations, keyed on UniProt accessions. | 5 read | none | none | docs 2026-11-09 |
 | [arXiv](https://info.arxiv.org/help/api/user-manual.html) `arxiv` | Search and look up arXiv preprints (titles, authors, abstracts, categories, links) through arXiv's free query API. | 1 read | none | none | docs 2026-11-09 |
 | [ChEMBL](https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services) `chembl` | EMBL-EBI's ChEMBL database of bioactive molecules: molecules and their properties, targets, bioactivity measurements, approved drugs, and substructure and similarity search. | 8 read | none | none | docs 2026-11-09 |
+| [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) `crossref` | Metadata for the DOIs registered with Crossref: works (articles, books, datasets...), journals, funders, members and their references, licenses and funding. | 8 read | none | none | docs 2026-11-16 |
 | [DOI.org](https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation) `doi` | Resolve a DOI to its handle record: the landing-page URL and other registered values, from the DOI Foundation's proxy server. | 1 read | none | none | docs 2026-11-09 |
 | [Europe PMC](https://www.ebi.ac.uk/europepmc/webservices/rest/v3/api-docs) `europepmc` | Search and look up life-science literature (PubMed abstracts, PMC full text, preprints, patents) with citations, references, database cross-links and open-access full text from Europe PMC's free REST API. | 7 read | none | none | docs 2026-11-09 |
 | [gnomAD (Genome Aggregation Database)](https://gnomad.broadinstitute.org/downloads#api) `gnomad` | Population allele frequencies of human genetic variants and per-gene constraint metrics from the Broad Institute's gnomAD, through the GraphQL API behind its browser. | 1 read | none | none | docs 2026-11-09 |
@@ -522,6 +526,7 @@ Research literature and life-science databases: genes, proteins, compounds.
 | [Springer Nature](https://dev.springernature.com/docs/introduction) `springer-nature` | Metadata and abstracts for Springer Nature journal articles, book chapters and protocols, plus open-access full text in JATS, from the Springer Nature APIs. | 3 read | key in query | `SPRINGER_NATURE_API_KEY` | docs 2026-11-09 |
 | [STRING](https://string-db.org/help/api/) `string-db` | Protein-protein interaction networks and functional enrichment for thousands of organisms: identifier mapping, networks, interaction partners, enrichment, annotations and homology. | 7 read | none | none | docs 2026-11-09 |
 | [UniProt](https://www.uniprot.org/help/api) `uniprot` | The UniProt protein sequence and function knowledgebase (UniProtKB, UniRef, UniParc): query search, entry retrieval and identifier mapping. | 7 read | none | none | docs 2026-11-09 |
+| [Wikidata](https://www.wikidata.org/wiki/Wikidata:REST_API) `wikidata` | Wikimedia's open knowledge base of structured facts: look up items and properties by label, read an item's labels, statements and sitelinks, and run SPARQL queries over the whole graph. | 10 read | none | none | docs 2026-11-16 |
 
 ### health
 
