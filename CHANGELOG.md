@@ -8,6 +8,7 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); while on
 
 ### Added
 
+- Vendor catalog: Neutrino API, EmailListVerify, IPQualityScore, Bouncer, Mailgun, DeBounce, Kickbox and Reoon Email Verifier, with 39 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 448 vendors and 3,321 endpoints.
 - Vendor catalog: SalesIntel, Skrapp, UpLead and Seamless.AI, with 28 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 440 vendors and 3,282 endpoints.
 - Vendor catalog: Forager, Reverse Contact and GetProspect, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 436 vendors and 3,254 endpoints.
 - Vendor catalog: FlightAware AeroAPI, Etsy Open API v3, Rainforest API and ATTOM Property API, with 40 read-only endpoints between them, each written from the vendor's own documentation and not yet called live. The catalog lists 433 vendors and 3,214 endpoints.

@@ -19,7 +19,7 @@ The tables below are generated from `src/web_router/data/vendors/` by
 `make vendors`; edit the JSON files, never the tables.
 
 <!-- vendors -->
-440 vendors, 3282 endpoints.
+448 vendors, 3321 endpoints.
 
 ### advertising
 
@@ -163,11 +163,19 @@ Checking an email, a phone number or an identity.
 | Vendor | What it holds | Endpoints | Auth | Variables | Checked |
 |---|---|---|---|---|---|
 | [BounceBan](https://bounceban.com/public/doc/api.html) `bounceban` | Email verification that also scores catch-all and gateway-protected addresses, with single, bulk-list and account calls. | 9 read | key in header | `BOUNCEBAN_API_KEY` | docs 2026-11-08 |
+| [Bouncer](https://docs.usebouncer.com/introduction) `bouncer` | Real-time email verification with deliverability status, reason, score and domain/account flags, plus domain catch-all checks and batch result downloads. | 5 read | key in header | `BOUNCER_API_KEY` | docs 2026-11-16 |
+| [DeBounce](https://developers.debounce.com/) `debounce` | Single email validation with result, reason, role and free-provider flags and typo suggestions, optional name and avatar append, a free disposable-domain check, and credit and usage history. | 4 read | key in query | `DEBOUNCE_API_KEY` | docs 2026-11-16 |
 | [Didit](https://docs.didit.me/getting-started/introduction) `didit` | Identity verification: KYC/KYB verification sessions and their decisions. | 2 read | key in header | `DIDIT_API_KEY` | docs 2026-11-09 |
+| [EmailListVerify](https://api.emaillistverify.com/api-doc) `emaillistverify` | Email deliverability checks (plain or detailed with MX, ESP, role and free flags), asynchronous high-quality jobs, disposable-domain and DNS blacklist checks, business email finding and credit balance. | 8 read | key in header | `EMAILLISTVERIFY_API_KEY` | docs 2026-11-16 |
 | [Filtrat](https://filtrat.io/v1/docs) `filtrat` | Email verification, work-email finding from a name and domain or a LinkedIn URL, bulk list jobs, and email-to-LinkedIn lookup. | 8 read | key in header | `FILTRAT_API_KEY` | docs 2026-11-08 |
 | [HLR Lookup](https://www.hlrlookup.com/knowledge) `hlrlookup` | Live HLR and mobile number portability lookups: whether a phone number is live, its type, and its original and current network. | 4 read | key in body | `HLRLOOKUP_API_KEY`, `HLRLOOKUP_API_SECRET` | docs 2026-11-09 |
+| [IPQualityScore](https://www.ipqualityscore.com/documentation/overview) `ipqualityscore` | Fraud and risk scoring for IP addresses (proxy, VPN, Tor, bot, recent abuse, location), email addresses (validity, deliverability, disposable, spam trap, leaks) and phone numbers (validity, carrier, line type, risk). | 3 read | key in header | `IPQS_API_KEY` | docs 2026-11-16 |
+| [Kickbox](https://docs.kickbox.com/docs/api-overview-copy) `kickbox` | Single email verification with result, reason, Sendex quality score, role, free, disposable and accept-all flags and typo suggestions, plus a free disposable-domain check. | 2 read | key in header | `KICKBOX_API_KEY` | docs 2026-11-16 |
+| [Mailgun](https://documentation.mailgun.com/docs/validate/api-overview) `mailgun` | Mailgun Validate: single email validation with result, risk, reasons, disposable and role flags, plus the status and summaries of bulk validation and list health preview jobs. Sending is not covered. | 5 read | HTTP Basic | `MAILGUN_API_KEY` | docs 2026-11-16 |
 | [MillionVerifier](https://developer.millionverifier.com/) `millionverifier` | Real-time email verification with a quality grade, result code, role and free-provider flags, and a credit balance check. | 2 read | key in query | `MILLIONVERIFIER_API_KEY` | docs 2026-11-08 |
+| [Neutrino API](https://www.neutrinoapi.com/api/api-basics/) `neutrino-api` | Email syntax/DNS validation and SMTP verification, phone number validation and HLR lookups, IP geolocation, IP probing (hosting, VPN, proxy, ASN), IP blocklists and DNSBL host reputation, and domain intelligence. | 9 read | key in header | `NEUTRINO_USER_ID`, `NEUTRINO_API_KEY` | docs 2026-11-16 |
 | [OrbiSearch](https://github.com/OrbiSearch/orbisearch-api/blob/main/docs/api-reference.md) `orbisearch` | Email verification that resolves catch-all domains, single or in bulk. | 4 read | key in header | `ORBISEARCH_API_KEY` | docs 2026-11-09 |
+| [Reoon Email Verifier](https://www.reoon.com/articles/api-documentation-of-reoon-email-verifier/) `reoon` | Email verification in a fast quick mode (syntax, disposable, MX, role) or a deep power mode (inbox exists, full, disabled, catch-all, score), bulk task results and credit balance. | 3 read | key in query | `REOON_API_KEY` | docs 2026-11-16 |
 | [Scrubby](https://docs.scrubby.io/) `scrubby` | Email validation with instant single checks, queued bulk batches and slower deep verification. | 5 read | key in header | `SCRUBBY_API_KEY` | docs 2026-11-08 |
 | [Trestle](https://docs.trestleiq.com/api-reference) `trestleiq` | Phone validation, caller identification and lead-contact grading (phone, email, address, IP) from Trestle's identity data. | 3 read | key in header | `TRESTLEIQ_API_KEY` | docs 2026-11-08 |
 | [Kitt](https://documenter.getpostman.com/view/479833/2s93m62NHf) `trykitt` | Find and verify work emails in real time, with a credit balance and job lookup. | 5 read | key in header | `TRYKITT_API_KEY` | docs 2026-11-08 |
